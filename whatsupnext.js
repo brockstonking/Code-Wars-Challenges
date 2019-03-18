@@ -14,4 +14,7 @@ function nextItem(xs, item) {
     }
 }
 
+
+//the code requires a knowledge of generators, something I do not yet understand. 
+//therefore, this is not complete. 
 console.log (nextItem(myArr, 3))
