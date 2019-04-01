@@ -8,5 +8,11 @@
 // For nCols = 16, nRows = 11, col = 5 and row = 3, the output should be
 
 function seatsInTheater(nCols, nRows, col, row) {
-    return (nCols - col) * (nRows - row) 
+    return (nCols - (col - 1)) * (nRows - row) 
+  }
+
+// best answer
+
+function seatsInTheater(nCols, nRows, col, row) {
+    return (nCols-col+1) * (nRows - row);  
   }
