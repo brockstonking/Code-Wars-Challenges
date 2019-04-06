@@ -15,7 +15,6 @@ function letterCheck(arr) {
     }
     return result
 }
-
     
 // best answer
 
