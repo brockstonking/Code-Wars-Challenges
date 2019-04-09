@@ -11,15 +11,26 @@
 // If the string is already empty, you cannot perform any more delete operations.
 
 function shiftLeft(s, t){
-    let result = 0;
+    let result = s.length + t.length
+    const sArr = s.split('').reverse();
+    const tArr = t.split('').reverse();
 
-    if (s[s.length - 1] != t[t.length - 1]) {
-        result = s.length + t.length
-    } else if (s[s.length - 1] === t[t.length - 1]) {
-        for (let i = )
-    }
+    sArr.some((e, i)=>{
+        if (e === tArr[i]) {
+            result -= 2;
+        } else {
+            return true
+        }
+    })
 
-    return result
+    return result 
   }
 
-  
+  // best answer
+
+  function shiftLeft(s, t) {
+    let i = s.length, j = t.length;
+    while (i >= 0 && j >= 0 && s[i] == t[j])
+      i--, j--;
+    return (i + 1) + (j + 1);
+  }
