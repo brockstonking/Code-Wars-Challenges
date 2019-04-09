@@ -7,14 +7,28 @@
 
 const myArr = [1,2,3,4,5]
 function nextItem(xs, item) {
-    if (xs.indexOf(item) === -1 || xs.indexOf(item) === xs.length - 1) {
-        return undefined;
-    } else {
-        return xs[xs.indexOf(item) + 1];
+    //   console.log(xs)
+    //     const itemIndex = xs.indexOf(item);
+    //     if(itemIndex > -1 && itemIndex < xs.length -1){
+    //         return xs[itemIndex + 1]
+    //     }
+            let there = false;
+        for(var x of xs){
+            console.log(x)
+            if(there) return x;
+            if(x === item) there = true;
+        }
+    
     }
-}
 
+    
+    // best answer
 
-//the code requires a knowledge of generators, something I do not yet understand. 
-//therefore, this is not complete. 
-console.log (nextItem(myArr, 3))
+    function nextItem(xs, item) {
+        var found = false;
+        for (var x of xs) {
+          if (found) return x;
+          if (x == item) found = true;
+        }
+        return undefined;
+      }
