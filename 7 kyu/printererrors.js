@@ -26,3 +26,20 @@ function printerError(s) {
 function printerError(s) {
     return s.match(/[^a-m]/g).length + "/" + s.length;
 }
+
+// info on .match()
+
+// note: the '^' expression used in the above best answer will 
+// create an array of everything outside of a-m. The expression 
+// /^m-z/g would likewise return an array including anything in 
+// the string ranging from a-l. 
+
+// note**: to chain multiple filtering conditionals, the proper syntax is
+// /[^A-I] [^m-z]/g
+
+var paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
+var regex = /[A-Z]/g;
+var found = paragraph.match(regex);
+
+console.log(found);
+// expected output: Array ["T", "I"]
