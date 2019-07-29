@@ -16,3 +16,6 @@ const multiples = (m, n) => {
     };
     return multiples;
 }
+
+
+// code academy kept timing out on code run. 
