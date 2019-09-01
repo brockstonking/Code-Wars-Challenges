@@ -7,4 +7,4 @@ const salt = (num1, num2, num3) => {
     })
 }
 
-console.log(salt(674, 685, 691))
+console.log(salt(508, 498, 502))
