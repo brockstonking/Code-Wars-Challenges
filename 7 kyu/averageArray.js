@@ -22,7 +22,6 @@
 //               |    |     |     |     |
 //               v    v     v     v     v
 // average:   [22.5, 11, 38.75, 38.25, 19.5]
-
 const avgArray = arr => {
     return arr[0].reduce((r, e, i) => {r.push(arr.reduce((r, e) => r+=e[i], 0)/arr.length); return r;}, []);
 }
