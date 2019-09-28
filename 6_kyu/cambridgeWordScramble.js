@@ -45,15 +45,15 @@ const mixwords = str => {
     }, []).join(' ') : undefined;
 }
 
-console.log(mixwords('hi'))
+console.log(mixwords(`DocuSign enables digital workflows that save money, increase efficiency, and move business forward. And there's only one day left to save 20% on a DocuSign annual plan. Use promo code GOSAVE20*.`))
 
 // best answer
 
-const _ = require('lodash');
+// const _ = require('lodash');
 
-function mixwords(str) {
-  if (typeof str !== 'string')
-    return undefined;
-  return str.replace(/\B[a-z]+\B/g, (s) =>
-    s.length < 3 ? s : _.shuffle(s).join(''));
-}
+// function mixwords(str) {
+//   if (typeof str !== 'string')
+//     return undefined;
+//   return str.replace(/\B[a-z]+\B/g, (s) =>
+//     s.length < 3 ? s : _.shuffle(s).join(''));
+// }
