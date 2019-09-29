@@ -45,7 +45,7 @@ const mixwords = str => {
     }, []).join(' ') : undefined;
 }
 
-console.log(mixwords(`DocuSign enables digital workflows that save money, increase efficiency, and move business forward. And there's only one day left to save 20% on a DocuSign annual plan. Use promo code GOSAVE20*.`))
+console.log(mixwords(`Specifically indiginous`))
 
 // best answer
 
