@@ -1,16 +1,10 @@
-const scrambled = (word1, word2) => {
-    return word2.split('').reduce((r, e, i) => {
-        let sliceable = word1.split('');
-        if (sliceable.includes(e)) {
-            debugger
-            r.push();
-            sliceable.splice(sliceable.indexOf(e), 1)
-        } else {
-            debugger
-            r.push(false)
-        }
+console.log('=====r=rrr=rra=====eee======bb====b======='.split('=').filter(e=>e))
+
+const setup = str => {
+    return [...new Set(str.split('=').filter(e=>e).reduce((r, e) => {
+        r = r.concat(e.split(''))
         return r;
-    }, [])
+    }, []))].reverse().join('')
 }
 
-console.log(scrambled('heyaef', 'yehffao'))
+console.log(setup('=====r=rrr=rra=====eee======bb====b======='))
